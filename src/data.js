@@ -6,7 +6,7 @@ const data = [
     orders: 501,
     totalSpent: "50.25 USD",
     latestPurchase: "27/11/2019 13:12:25 ",
-    news: true,
+    news: "true",
     segments: "Regular",
   },
   {
@@ -16,7 +16,7 @@ const data = [
     orders: 301,
     totalSpent: "750.10 USD",
     latestPurchase: "07/06/2020 14:12:25",
-    news: false,
+    news: "false",
     segments: "Regular",
   },
   {
@@ -26,7 +26,7 @@ const data = [
     orders: 61,
     totalSpent: "1200.14 USD",
     latestPurchase: "15/07/2020 15:12:25",
-    news: true,
+    news: "true",
     segments: "Premium",
   },
   {
@@ -36,7 +36,7 @@ const data = [
     orders: 31,
     totalSpent: "900.00 USD",
     latestPurchase: "20/05/2020 05:12:25",
-    news: false,
+    news: "false",
     segments: "Regular",
   },
   {
@@ -46,7 +46,7 @@ const data = [
     orders: 21,
     totalSpent: "1500 USD",
     latestPurchase: "05/09/2020 21:12:25",
-    news: true,
+    news: "true",
     segments: "Premium",
   },
   {
@@ -56,7 +56,7 @@ const data = [
     orders: 81,
     totalSpent: "300.10 USD",
     latestPurchase: "10/03/2020 07:12:25",
-    news: false,
+    news: "false",
     segments: "Regular",
   },
   {
@@ -66,7 +66,7 @@ const data = [
     orders: 71,
     totalSpent: "650 USD",
     latestPurchase: "18/02/2020 03:12:25",
-    news: true,
+    news: "true",
     segments: "Regular",
   },
   {
@@ -76,7 +76,7 @@ const data = [
     orders: 61,
     totalSpent: "400 USD",
     latestPurchase: "22/01/2020 14:12:25",
-    news: false,
+    news: "false",
     segments: "Regular",
   },
   {
@@ -86,7 +86,7 @@ const data = [
     orders: 1,
     totalSpent: "550.50 USD",
     latestPurchase: "30/06/2020 13:12:25",
-    news: true,
+    news: "true",
     segments: "Premium",
   },
 ];

@@ -21,18 +21,15 @@ export default function MyDataGrid() {
   };
 
   const filteredRows = data.filter((row) =>
-    Object.values(row).some((value) => {
-      if (
-        typeof value === "number" &&
-        value.toString().toLowerCase().includes(filterValue.toLowerCase())
-      ) {
-        return true;
+    Object.keys(row).some((field) => {
+      if (typeof row[field] === "boolean") {
+        return row[field] === (filterValue.toLowerCase() === "true");
       }
-      if (
-        typeof value === "string" &&
-        value.toLowerCase().includes(filterValue.toLowerCase())
-      ) {
-        return true;
+      if (typeof row[field] === "string") {
+        return row[field].toLowerCase().includes(filterValue.toLowerCase());
+      }
+      if (typeof row[field] === "number") {
+        return row[field].toString().includes(filterValue.toLowerCase());
       }
       return false;
     })
