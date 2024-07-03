@@ -3,14 +3,13 @@ import { DataGrid } from "@mui/x-data-grid";
 import data from "./data";
 
 const columns = [
-  { field: "id", headerName: "ID", width: 100 },
-  { field: "customer", headerName: "Customer", width: 150 },
-  { field: "lastSeen", headerName: "Last Seen", width: 150 },
-  { field: "orders", headerName: "Orders", width: 150 },
-  { field: "totalSpent", headerName: "Total Spent", width: 150 },
-  { field: "latestPurchase", headerName: "Latest Purchase", width: 150 },
-  { field: "news", headerName: "News", width: 150 },
-  { field: "segments", headerName: "Segments", width: 150 },
+  { field: "customer", headerName: "Customer", width: 100 },
+  { field: "lastSeen", headerName: "Last Seen", width: 100 },
+  { field: "orders", headerName: "Orders", width: 100 },
+  { field: "totalSpent", headerName: "Total Spent", width: 100 },
+  { field: "latestPurchase", headerName: "Latest Purchase", width: 200 },
+  { field: "news", headerName: "News", width: 100 },
+  { field: "segments", headerName: "Segments", width: 100 },
 ];
 
 export default function MyDataGrid() {
@@ -18,11 +17,9 @@ export default function MyDataGrid() {
 
   const inputHandler = (e) => {
     const value = e.target.value;
-    console.log(value);
-    setFilterValue(value); // Update state with input value if needed
+    setFilterValue(value.trim());
   };
 
-  // Filtering rows based on the filterValue state
   const filteredRows = data.filter((row) =>
     Object.values(row).some(
       (value) =>
